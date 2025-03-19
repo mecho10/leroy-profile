@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Leroy CHANG</title> 
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="menu">&#9776;</button>
+            <nav>
+                <h1>About</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Photo</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="about-content">
+                <h2>Me</h2>
+                
+                <div class="profile-section">
+                    <div class="profile-details">
+                        <div class="info-item interactive-element">
+                            <p><strong>Name:</strong> Leroy CHANG</p>
+                        </div>
+                        <div class="info-item interactive-element">
+                            <p><strong>Age:</strong> 28</p>
+                        </div>
+                        <div class="info-item interactive-element">
+                            <p class="location"><strong>Location:</strong> <span>Taiwan 🇹🇼</span></p>
+                        </div>
+                        <div class="info-item interactive-element">
+                            <p><strong>Contact:</strong> chang861019@gmail.com</p>
+                        </div>
+                        <div class="info-item interactive-element">
+                            <p><strong>Github:</strong> <a href="https://github.com/mecho10" class="blue-link" target="_blank">https://github.com/mecho10</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-section">
+                        <p><strong>Skills:</strong></p>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                        
+                        <p><strong>Experience:</strong></p>
+                        <p>Self-taught front-end developer with hands-on experience in building various projects, including a personal portfolio website, web scrapers, and Chrome extensions. Continuously learning and improving skills in Vue.js, front-end best practices, and modern development technologies.</p>
+                    </div>
+                </div>
+                
+                <h3>My Photos</h3>
+                <div id="slideshow" class="interactive-element">
+                    <img src="images/me_resized.png" class="slide">
+                    <img src="images/black.png" class="slide">
+                    <img src="images/me_resized.png" class="slide">
+                    
+                    <!-- 前後按鈕 -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                <!-- 點指示器 -->
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="foot">
+            <p>Copyright © 2024 LEROY. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Include both JavaScript files in the right order -->
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

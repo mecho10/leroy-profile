@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Leroy Chang</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="menu">&#9776;</button>
+            <nav>
+                <h1>Photo Gallery</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="photo.html">Photo</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="gallery-intro">
+                <h2>My Photo Collection</h2>
+                <p><em>Welcome to my personal photo gallery</em></p>
+                <p class="subtitle">MEMORIES CAPTURED</p>
+                <p><em>Click on any photo to view it in full size</em></p>
+            </section>
+            
+            <section class="gallery-categories">
+                <button class="category-btn active" data-category="all">All Photos</button>
+                <button class="category-btn" data-category="travel">Travel</button>
+                <button class="category-btn" data-category="personal">Personal</button>
+                <button class="category-btn" data-category="nature">Nature</button>
+            </section>
+            
+            <section class="photo-gallery">
+                <!-- 照片1 -->
+                <div class="gallery-item interactive-element" data-category="travel">
+                    <img src="images/g1.png.jpg" alt="Travel Photo 1">
+                    <div class="gallery-overlay">
+                        <h4>Travel Adventure</h4>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <!-- 照片2 -->
+                <div class="gallery-item interactive-element" data-category="personal">
+                    <img src="images/g2.png.jpg" alt="Personal Photo 1">
+                    <div class="gallery-overlay">
+                        <h4>Lake Louise</h4>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <!-- 照片3 -->
+                <div class="gallery-item interactive-element" data-category="nature">
+                    <img src="images/g3.png.jpg" alt="Nature Photo 1">
+                    <div class="gallery-overlay">
+                        <h4>Fairmont Hotel</h4>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <!-- 照片4 -->
+                <div class="gallery-item interactive-element" data-category="travel">
+                    <img src="images/g4.jpg" alt="Travel Photo 2">
+                    <div class="gallery-overlay">
+                        <h4>Winnipeg Aurora</h4>
+                        <p>December 2024</p>
+                    </div>
+                </div>
+                
+                <!-- 照片5 -->
+                <div class="gallery-item interactive-element" data-category="personal">
+                    <img src="images/g5.jpg" alt="Personal Photo 2">
+                    <div class="gallery-overlay">
+                        <h4>Columbia Icefield</h4>
+                        <p>June 2025</p>
+                    </div>
+                </div>
+                
+                <!-- 照片6 -->
+                <div class="gallery-item interactive-element" data-category="nature">
+                    <img src="images/g6.jpg" alt="Nature Photo 2">
+                    <div class="gallery-overlay">
+                        <h4>Aurora</h4>
+                        <p>Autumn 2024</p>
+                    </div>
+                </div>
+                
+                <!-- 加入更多-->
+            </section>
+            
+            <!-- Lightbox -->
+            <div class="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <img class="lightbox-content" id="enlarged-image">
+                <div class="lightbox-caption"></div>
+            </div>
+            
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <p>Contact me by Email</p>
+                <form action="https://formspree.io/f/xovevkvd" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email Here" required>
+                    <textarea name="message" placeholder="Your message here..." rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Copyright © 2024 LEROY. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

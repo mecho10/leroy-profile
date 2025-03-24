@@ -88,6 +88,26 @@ main {
     padding: 20px;
 }
 
+/* 新增的圓形照片樣式 */
+.profile-image-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
 section {
     margin-bottom: 40px;
     opacity: 1;
@@ -169,13 +189,6 @@ h2::after {
     margin-top: 30px;
 }
 
-.project-item {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
 
 .project-item:hover {
     transform: translateY(-10px);

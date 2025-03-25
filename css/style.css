@@ -182,38 +182,62 @@ h2::after {
     font-size: 1.1rem;
 }
 
-.project {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-
-.project-item:hover {
-    transform: translateY(-10px);
-}
-
-.project-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project-item h4 {
-    padding: 15px;
-    text-align: center;
+.project p {
+    margin-bottom: 12px;
     color: #2c3e50;
-    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px;
+}
+
+.project p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    border-radius: 50%;
+}
+
+.project p {
+    line-height: 1.6;
 }
 
 .info {
     grid-column: 1 / -1;
+    background-color: rgba(52, 152, 219, 0.1);
+    border: 2px solid rgba(52, 152, 219, 0.2);
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
-    padding: 20px;
-    background-color: rgba(236, 240, 241, 0.6);
-    border-radius: 10px;
-    margin-top: 20px;
+}
+
+.info h3 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.info h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+}
+
+.info p {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    line-height: 1.6;
 }
 
 /* 聯繫表單 */
@@ -300,6 +324,10 @@ footer {
     
     .project {
         grid-template-columns: 1fr;
+    }
+
+    .good, .info {
+        padding: 20px;
     }
     
     .me .name {

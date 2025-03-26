@@ -185,7 +185,7 @@ h2::after {
 .project p {
     margin-bottom: 12px;
     color: #2c3e50;
-    display: flex;
+    display: block;
     align-items: flex-start;
     position: relative;
     padding-left: 20px;

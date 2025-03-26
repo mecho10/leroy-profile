@@ -1,75 +1,78 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" id="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title data-translate="title">My Resume</title>
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
+    <div class="language-switcher">
+        <button id="zh-btn" class="lang-btn active">中文</button>
+        <button id="en-btn" class="lang-btn">English</button>
+    </div>
+
     <div class="container">
         <header>
             <button class="menu">&#9776;</button>
             <nav>
-                <h1>首頁</h1>
+                <h1 data-translate="home">首頁</h1>
                 <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我</a></li>
-                    <li><a href="photo.html">照片</a></li>
-                    <li><a href="#contact">聯絡</a></li>
+                    <li><a href="index.html" data-translate="home-link">首頁</a></li>
+                    <li><a href="about.html" data-translate="about-link">關於我</a></li>
+                    <li><a href="photo.html" data-translate="photo-link">照片</a></li>
+                    <li><a href="#contact" data-translate="contact-link">聯絡</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
-            <!-- 新增的圓形照片容器 -->
             <div class="profile-image-container">
                 <img src="images/resume.jpg" alt="ME" class="profile-image">
             </div>
             
             <section class="me">    
-                <h2>自傳</h2>
-                <p><em>我是 Leroy Chang</em></p>
-                <p><em>沒有相關科系背景與相關工作經驗，透過自學進入前端開發領域</em></p>
-                <p class="name">LEROY CHANG</p>
-                <a href="about.html" class="more-btn">更多...</a>
+                <h2 data-translate="autobiography">自傳</h2>
+                <p data-translate="intro-1"><em>我是 Leroy Chang</em></p>
+                <p data-translate="intro-2"><em>沒有相關科系背景與相關工作經驗，透過自學進入前端開發領域</em></p>
+                <p class="name" data-translate="name">LEROY CHANG</p>
+                <a href="about.html" class="more-btn" data-translate="more">更多...</a>
             </section>
             
             <section class="good">
-                <p><em>我是 Leroy Chang</em></p>
-                <p><em>在我出社會後，所有的工作經驗都是餐飲業，做了6年以上的餐飲業，這段經歷讓我學會了團隊合作、應對挑戰。工作了一陣子後也漸漸地明白工作對自己的意義是什麼以及自己重視的地方，當然這些想法也可能隨著年紀的不同而有所轉變，雖然穩定但因為產業屬性的關係難以想像五年後的自己會是什麼模樣、甚至是十年後二十年後…每天穩定且平淡，這樣沒有不好但總感覺能做的更多，轉職的念頭一直存在我心中，但踏出舒適圈不是件簡單的事情有太多事情要考慮，包括跳槽到哪個行業？沒有經濟來源該怎麼辦？一些看起來很嚴重的問題就讓我遲遲不敢有什麼實際的行動，最後決定在我26歲時獨自遠赴加拿大🇨🇦看看世界，在加拿大的這一年裡我接觸到了各種領域的人，接觸到軟體工程這個領域的朋友後決定先從網頁前端（也是大家認為對零程式基礎的人最容易上手）作為轉職起點。</em></p>
-                <p><strong>If you never try, you’ll never find out.</strong></p>
+                <p data-translate="good-intro-1"><em>我是 Leroy Chang</em></p>
+                <p data-translate="good-intro-2"><em>在我出社會後，所有的工作經驗都是餐飲業，做了6年以上的餐飲業，這段經歷讓我學會了團隊合作、應對挑戰。工作了一陣子後也漸漸地明白工作對自己的意義是什麼以及自己重視的地方，當然這些想法也可能隨著年紀的不同而有所轉變，雖然穩定但因為產業屬性的關係難以想像五年後的自己會是什麼模樣、甚至是十年後二十年後…每天穩定且平淡，這樣沒有不好但總感覺能做的更多，轉職的念頭一直存在我心中，但踏出舒適圈不是件簡單的事情有太多事情要考慮，包括跳槽到哪個行業？沒有經濟來源該怎麼辦？一些看起來很嚴重的問題就讓我遲遲不敢有什麼實際的行動，最後決定在我26歲時獨自遠赴加拿大🇨🇦看看世界，在加拿大的這一年裡我接觸到了各種領域的人，接觸到軟體工程這個領域的朋友後決定先從網頁前端（也是大家認為對零程式基礎的人最容易上手）作為轉職起點。</em></p>
+                <p data-translate="motto"><strong>If you never try, you'll never find out.</strong></p>
             </section>
             
             <section class="project">
-                <div class="project-item">
-                </div>
+                <div class="project-item"></div>
                 <div class="info">
-                    <h3>自學過程</h3>
-                    <p><em>開始觀看各種youtube教學影片</em></p>
-                    <p><em>掌握必備技能、基礎知識、自訂學習計劃</em></p>
-                    <p><em>掌握HTML & CSS 基礎</em></p>
-                    <p><em>開始學習JavaScript 基礎</em></p>
-                    <p><em>DOM 操作 + 事件處理</em></p>
-                    <p><em>整合 HTML / CSS / JS</em></p>
-                    <p><em>慢慢開始接觸Vue.js & React.js</em></p>
-                    <p><em>希望能夠透過 Vue.js 與 React.js 建構更完整的 Web 應用，未來也計畫學習後端技術，成為具備全端能力的開發者</em></p>
+                    <h3 data-translate="learning-process">自學過程</h3>
+                    <p data-translate="learning-1"><em>開始觀看各種youtube教學影片</em></p>
+                    <p data-translate="learning-2"><em>掌握必備技能、基礎知識、自訂學習計劃</em></p>
+                    <p data-translate="learning-3"><em>掌握HTML & CSS 基礎</em></p>
+                    <p data-translate="learning-4"><em>開始學習JavaScript 基礎</em></p>
+                    <p data-translate="learning-5"><em>DOM 操作 + 事件處理</em></p>
+                    <p data-translate="learning-6"><em>整合 HTML / CSS / JS</em></p>
+                    <p data-translate="learning-7"><em>慢慢開始接觸Vue.js & React.js</em></p>
+                    <p data-translate="learning-goal"><em>希望能夠透過 Vue.js 與 React.js 建構更完整的 Web 應用，未來也計畫學習後端技術，成為具備全端能力的開發者</em></p>
                 </div>
             </section>
             
             <section id="contact" class="contact">
-                <h2>聯絡方式</h2>
-                <p>Contact me by Email</p>
+                <h2 data-translate="contact">聯絡方式</h2>
+                <p data-translate="contact-email">Contact me by Email</p>
                 <form action="https://formspree.io/f/xovevkvd" method="POST">
                     <input type="email" name="email" placeholder="Enter your email Here" required>
                     <textarea name="message" placeholder="Your message here..." rows="4" required></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit" data-translate="send">Send</button>
                 </form>
             </section>
         </main>
         
         <footer>
-            <p>Copyright © 2024 LEROY. All rights reserved.</p>
+            <p data-translate="copyright">Copyright © 2024 LEROY. All rights reserved.</p>
         </footer>
     </div>
     

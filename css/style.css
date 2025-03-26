@@ -179,7 +179,7 @@ h2::after {
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .project p {
@@ -189,7 +189,6 @@ h2::after {
     align-items: flex-start;
     position: relative;
     padding-left: 20px;
-    text-indent: -5px;
 }
 
 .project p::before {

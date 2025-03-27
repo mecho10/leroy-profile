@@ -203,7 +203,7 @@ footer {
 /* 語言 */
 .language-switcher {
     position: fixed;
-    top: 20px;
+    top: 60px;
     right: 20px;
     z-index: 1000;
     display: flex;

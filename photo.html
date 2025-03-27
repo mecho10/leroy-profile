@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" id="html-root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,38 @@
     <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
+    <div class="language-switcher">
+        <button id="zh-btn" class="lang-btn active">中文</button>
+        <button id="en-btn" class="lang-btn">English</button>
+    </div>    
+
     <div class="container">
         <header>
             <button class="menu">&#9776;</button>
             <nav>
                 <h1>Photo Gallery</h1>
                 <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">自介</a></li>
-                    <li><a href="photo.html">照片</a></li>
-                    <li><a href="index.html#contact">聯絡</a></li>
+                    <li><a href="index.html" data-translate="home-link">首頁</a></li>
+                    <li><a href="about.html" data-translate="about-link">自介</a></li>
+                    <li><a href="photo.html" data-translate="photo-link">照片</a></li>
+                    <li><a href="index.html#contact" data-translate="contact-link">聯絡</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
             <section class="gallery-intro">
-                <h2>我的照片收藏</h2>
-                <p><em>歡迎來到我的個人照片畫廊</em></p>
-                <p class="subtitle">捕捉的回憶</p>
-                <p><em>點擊任何一張照片以查看完整尺寸</em></p>
+                <h2 data-translate="me1">我的照片收藏</h2>
+                <p data-translate="me2"><em>個人照片畫廊</em></p>
+                <p class="subtitle" data-translate="me3">捕捉的回憶</p>
+                <p data-translate="me4"><em>點擊任何一張照片以查看完整尺寸</em></p>
             </section>
             
             <section class="gallery-categories">
-                <button class="category-btn active" data-category="all">全部</button>
-                <button class="category-btn" data-category="travel">旅行</button>
-                <button class="category-btn" data-category="personal">個人</button>
-                <button class="category-btn" data-category="nature">大自然</button>
+                <button class="category-btn active" data-category="all" data-translate="you1">全部</button>
+                <button class="category-btn" data-category="travel" data-translate="you2">旅行</button>
+                <button class="category-btn" data-category="personal" data-translate="you3">個人</button>
+                <button class="category-btn" data-category="nature" data-translate="you4">大自然</button>
             </section>
             
             <section class="photo-gallery">
@@ -42,7 +47,7 @@
                 <div class="gallery-item interactive-element" data-category="travel">
                     <img src="images/g1.png.jpg" alt="Travel Photo 1">
                     <div class="gallery-overlay">
-                        <h4>旅行冒險</h4>
+                        <h4 data-translate="travel1">旅行冒險</h4>
                         <p>Summer 2024</p>
                     </div>
                 </div>
@@ -69,7 +74,7 @@
                 <div class="gallery-item interactive-element" data-category="travel">
                     <img src="images/g4.jpg" alt="Travel Photo 2">
                     <div class="gallery-overlay">
-                        <h4>極光</h4>
+                        <h4 data-translate="travel4">極光</h4>
                         <p>December 2024</p>
                     </div>
                 </div>
@@ -87,7 +92,7 @@
                 <div class="gallery-item interactive-element" data-category="nature">
                     <img src="images/g6.jpg" alt="Nature Photo 2">
                     <div class="gallery-overlay">
-                        <h4>極光</h4>
+                        <h4 data-translate="travel6">極光</h4>
                         <p>Autumn 2024</p>
                     </div>
                 </div>
@@ -103,7 +108,7 @@
             </div>
             
             <section id="contact" class="contact">
-                <h2>聯絡方式</h2>
+                <h2 data-translate="contact">聯絡方式</h2>
                 <p>Contact me by Email</p>
                 <form action="https://formspree.io/f/xovevkvd" method="POST">
                     <input type="email" name="email" placeholder="Enter your email Here" required>
@@ -118,7 +123,6 @@
         </footer>
     </div>
     
-    <script src="js/script.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 </html>

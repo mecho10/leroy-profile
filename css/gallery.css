@@ -198,3 +198,31 @@
         grid-template-columns: 1fr;
     }
 }
+/* 語言 */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.language-switcher button.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.language-switcher button:hover {
+    background-color: #3498db;
+    color: white;
+}

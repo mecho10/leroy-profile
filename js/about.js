@@ -11,7 +11,7 @@ const translations = {
         "name": "姓名: Leroy CHANG",
         "age": "年齡: 28",
         "contact": "聯絡方式: chang861019@gmail.com",
-        "project": "專案",
+        "project": "專案:",
         "skill": "技能:",
         "Experience": "經歷:",
         "story": "我是自學的前端開發者，沒有的學術背景。雖然我的過去職業與前端開發無關，但透過自學和實作專案，我累積了實際的開發經驗。我獨立開發了個人作品集網站，並熟練掌握 HTML 和 CSS。目前，我正在學習 Vue.js，希望能運用這些技能順利轉職成為前端開發工程師。",
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('[data-translate]').forEach(el => {
             const key = el.getAttribute('data-translate');
             if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
+                el.innerHTML = translations[lang][key];
             } else {
                 console.warn(`Translation missing for key: ${key}`);
             }
